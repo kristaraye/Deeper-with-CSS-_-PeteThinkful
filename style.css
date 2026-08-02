@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0; 
+  background-color: #800020;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 600px;  
+  margin: 0 auto;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Baskerville', Regular;
+  font-size: 2rem;
+  color: #ecf3f3;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 2rem;
+  padding: 10px;
+  text-decoration: none;
+  color: #d45a00;
+  font-weight: 500;
+}
+
+nav a:link {
+  color: #d62828;
+}
+
+nav a:hover {
+  color: #f77f00;
+  text-decoration: underline;
+}
+
+/* ABOUT SECTION LAYOUT */
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-row .image-circle {
+  margin: 0;             
+  max-width: 180px;      
+}
+
+.about-text {
+  text-align: left;
+}
+
+#about > div,
+#about .about-row,
+#about .about-text {
+  max-width: none;
+  width: 100%;
+  text-align: left;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 600px) {
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+body {
+  padding-top: 100px;
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color: #93ceec;
+}
+
+h1 {
+  font-family: "Baskerville", Regular;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Baskerville", Regular;
+  font-size: 1.5rem;
+  text-align: center;
+}
+h3 {
+  font-family: "Baskerville", Regular;
+  font-size: 1.25rem;
+  text-align: center;
+}
+h4 {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.image-circle {
+  border-radius: 50%;
+  justify-content: center;
+  border: 2px solid #003049;
+  display: block;
+  margin: 0 auto;
+}
+
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+  max-width: 600px
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+div {
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Remove global article width limit for portfolio */
+#portfolio {
+  max-width: 600px;   /* same width as article */
+  margin: 0 auto;
+}
+
+#portfolio div {
+  max-width: none;
+  width: 100%;
+}
+
+/* Portfolio layout */
+/* Reset internal spacing so titles align at the top */
+.portfolio-item h3,
+.portfolio-item img,
+.portfolio-item p {
+  margin-top: 0;
+}
+
+.portfolio-item h3 {
+  margin-bottom: 14px;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-wrap: nowrap;      /* force side-by-side */
+  gap: 30px;
+  align-items: flex-start; /* align tops */
+  justify-content: center;
+}
+
+/* Each card matches article width divided by 3 */
+.portfolio-item {
+  width: calc(33.333% - 20px);
+  text-align: center;
+}
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Image fills the card width */
+.portfolio-item img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+ul li {
+  text-align: left
+}
+
+hr {
+  border: 1px solid black;
+  width: 600px;
+}
+
+ol li {
+  a:link { color: #d62828; }
+  a:hover { color: #f77f00; }
+  text-align: left
+}
+
+footer {
+  text-align: center;
+}
+
